@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="LightPink">#FFB6C1</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="LightGreen">#90EE90</color>
+    <color name="LightYellow">#FFFFE0</color>
+    <color name="Orange">#FFA500</color>
+    <color name="MistyRose">#FFE4E1</color>
+    <color name="LightGrey">#D3D3D3</color>
+</resources>

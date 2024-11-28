@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 保存菜单项 -->
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_menu_save"
+        android:alphabeticShortcut='s'
+        android:title="@string/menu_save"
+        android:showAsAction="ifRoom|withText" />
+
+    <!-- 删除菜单项 -->
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_menu_delete"
+        android:title="@string/menu_delete"
+        android:showAsAction="ifRoom|withText" />
+
+    <!-- 恢复菜单项 -->
+    <item
+        android:id="@+id/menu_revert"
+        android:icon="@drawable/ic_menu_revert"
+        android:title="@string/menu_revert"
+        android:showAsAction="ifRoom|withText" />
+
+    <!-- 编辑颜色菜单项，不需在ActionBar显示 -->
+    <item
+        android:id="@+id/menu_edit_color"
+        android:title="@string/menu_change_background_color" />
+
+    <!-- 注释掉的编辑标题菜单项（如有需求可启用） -->
+    <!--<item
+        android:id="@+id/menu_edit_title"
+        android:icon="@drawable/ic_menu_edit"
+        android:title="@string/resolve_title"
+        android:showAsAction="ifRoom|withText" />-->
+
+</menu>

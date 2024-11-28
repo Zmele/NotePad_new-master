@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Declare the contents of this Android application.  The namespace
+     attribute brings in the Android platform namespace, and the package
+     supplies a unique name for the application.  When writing your
+     own application, the package name must be changed from "com.example.*"
+     to come from a domain that you own or have control over. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.notepad" >
+
+    <application android:icon="@drawable/app_notes"
+        android:label="@string/app_name"
+    >
+        <provider android:name="NotePadProvider"
+            android:authorities="com.google.provider.NotePad"
+            android:exported="false">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+
+        <activity android:name="NotesList" android:label="@string/title_notes_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="NoteEditor"
+            android:theme="@style/MyCustomTheme"
+            android:screenOrientation="sensor"
+            android:configChanges="keyboardHidden|orientation"
+            >
+            <!-- 这个过滤器表示我们可以查看或编辑单个笔记的数据 -->
+            <intent-filter android:label="@string/resolve_edit">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="com.android.notepad.action.EDIT_NOTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+
+            <!-- 这个过滤器表示我们可以在笔记目录中创建一个新笔记。
+                 INSERT 操作会创建一个空的笔记；PASTE 操作会根据当前剪贴板的内容初始化一个新笔记。 -->
+            <intent-filter android:label="@string/menu_add">
+                <action android:name="android.intent.action.INSERT" />
+                <action android:name="android.intent.action.PASTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.google.note" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="TitleEditor"
+            android:label="@string/title_edit_title"
+            android:icon="@drawable/ic_menu_edit"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:windowSoftInputMode="stateVisible">
+            <!-- 该活动实现了对笔记的另一种操作：编辑其标题。
+                 如果用户调用此操作，则可以作为默认操作使用，并且对于任何笔记数据都可用作替代操作。 -->
+            <intent-filter android:label="@string/resolve_title">
+                <!-- 这是我们执行的操作。它是我们应用程序定义的自定义操作，不是通用的 VIEW 或 EDIT 操作，因为我们不是通用的笔记查看/编辑器。 -->
+                <action android:name="com.android.notepad.action.EDIT_TITLE" />
+                <!-- DEFAULT: 如果直接调用，则执行该操作。 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- ALTERNATIVE: 在用户处理这种类型的数据时显示为替代操作。 -->
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <!-- SELECTED_ALTERNATIVE: 在用户选择此类数据时显示为替代操作。 -->
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+                <!-- 这是我们操作的数据类型。 -->
+                <data android:mimeType="vnd.android.cursor.item/vnd.google.note" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="NotesLiveFolder" android:label="@string/live_folder_name"
+            android:icon="@drawable/live_folder_notes">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyCustomTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/LightPink</item> <!-- 设置标题栏背景为黑色 -->
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item> <!-- 设置标题文本颜色为白色 -->
+        <item name="android:textSize">20sp</item> <!-- 可调整标题文字大小 -->
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- 设置字体 → 可以更改为其他字体 -->
+    </style>
+
+    <!--<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ActionBarText" parent="TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>-->
+</resources>

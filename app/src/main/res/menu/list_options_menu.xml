@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  这是我们一个标准的应用程序操作（创建一个新便签）。 -->
+    <item android:id="@+id/menu_add"
+          android:icon="@drawable/ic_menu_compose"
+          android:title="@string/menu_add"
+          android:alphabeticShortcut='a'
+          android:showAsAction="ifRoom|withText" />
+    <!--  如果剪贴板中当前有数据，这将向菜单添加一个粘贴菜单项，
+      以便用户可以粘贴数据。 -->
+    <item android:id="@+id/menu_paste"
+          android:icon="@drawable/ic_menu_paste"
+          android:title="@string/menu_paste"
+          android:alphabeticShortcut='p'
+          android:showAsAction="ifRoom|withText" />
+</menu>
