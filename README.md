@@ -292,6 +292,7 @@
 ```
 
 前后对比：（后面还替换了图标）
+
 ![248d5f7048e047d4af64cf21b95013f7](./images/248d5f70-48e0-47d4-af64-cf21b95013f7.png?msec=1732818203675)
 ![6c9aff2ba372419cae15d4fb5c66d0ab](./images/6c9aff2b-a372-419c-ae15-d4fb5c66d0ab.png?msec=1732818203677)
 ![3e811b41-86eb-4de9-b7de-b47dfffa9802](./images/3e811b41-86eb-4de9-b7de-b47dfffa9802.png)
@@ -359,6 +360,7 @@
 ### 更新SDK后
 
 ![77026b0a-6503-4d55-b039-4edfbd1ac492](./images/77026b0a-6503-4d55-b039-4edfbd1ac492.png)
+
 报错问题解决（`AndroidManifest.xml`）：
 给定义了意图过滤器（`intent filter`）的组件（`activity`）设置 `android:exported` 属性![dcf50e4d-bb27-45c1-b012-3c52f67f7232](./images/dcf50e4d-bb27-45c1-b012-3c52f67f7232.png)
 ![84534308-1983-4a40-93f1-a16e7255dc77](./images/84534308-1983-4a40-93f1-a16e7255dc77.png)
