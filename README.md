@@ -97,6 +97,7 @@
    
    在 `NoteEditor` 类中，处理新菜单项的选择。在 `onOptionsItemSelected` 中添加相应的代码
    ![ba453e1c-0df7-4074-8ade-74ccea23aaa6](./images/ba453e1c-0df7-4074-8ade-74ccea23aaa6.png)
+   
    实现 `showColorPickerDialog` 方法
    ![d1846b6d-e6b7-4212-a84c-4b0d9d929a09](./images/d1846b6d-e6b7-4212-a84c-4b0d9d929a09.png)
    这样修改后，颜色无法保存，重新打开笔记后，颜色又恢复默认，改进：使用 `SharedPreferences` 来实现这一点
@@ -111,7 +112,7 @@
    
    > `Color` 类提供了一些预定义的颜色常量（前面用到的颜色有的太亮，不太友好），但这样后面添加新颜色比较麻烦，使用修改为用color.xml中定义的颜色，这样颜色的选择比较多样，修改也比较方便
 
-3. 使用color.xml来代替Color类
+4. 使用color.xml来代替Color类
    
    > `Color` 类提供了一些预定义的颜色常量（前面用到的颜色有的太亮，不太友好），但这样后面添加新颜色比较麻烦，使用修改为用color.xml中定义的颜色，这样颜色的选择比较多样，修改也比较方便
    
@@ -121,7 +122,7 @@
    修改colors数组和显示文本
    ![a073812d-bf96-456f-8590-219385876512](./images/a073812d-bf96-456f-8590-219385876512.png)
 
-4. 效果展示：
+5. 效果展示：
    ![f55b6287-e49f-4bda-8a97-ab0b73ae3146](./images/f55b6287-e49f-4bda-8a97-ab0b73ae3146.png)
    ![180111c7-b644-4486-9a64-6276e69de6b9](./images/180111c7-b644-4486-9a64-6276e69de6b9.png)
    
