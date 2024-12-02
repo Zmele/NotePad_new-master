@@ -371,9 +371,10 @@
 ![dcf50e4d-bb27-45c1-b012-3c52f67f7232](./images/dcf50e4d-bb27-45c1-b012-3c52f67f7232.png)
 ![84534308-1983-4a40-93f1-a16e7255dc77](./images/84534308-1983-4a40-93f1-a16e7255dc77.png)
 ![bea83eee-1f41-4640-a63f-d1f12498b218](./images/bea83eee-1f41-4640-a63f-d1f12498b218.png)
+
 更新后页面展示：
 
-![2e0e44f7-5a5e-4af6-bf30-29ded42971a7](file:///C:/Users/zjinh/Pictures/Typedown/2e0e44f7-5a5e-4af6-bf30-29ded42971a7.png)
+![2e0e44f7-5a5e-4af6-bf30-29ded42971a7](./images/2e0e44f7-5a5e-4af6-bf30-29ded42971a7.png)
 
 #### 添加字体样式修改功能
 
@@ -382,9 +383,10 @@
    ![812f318b-f0bd-42b1-b5d5-0a8e1e23bd8d](./images/812f318b-f0bd-42b1-b5d5-0a8e1e23bd8d.png)
 
 3. 添加一个菜单项用来显示修改字体样式（`onOptionsItemSelected()`方法）
+   
    ![b0df53c2-8850-4c9a-93ce-af2368a7e45d](./images/b0df53c2-8850-4c9a-93ce-af2368a7e45d.png)
 
-4. 编写一个方法<`showFontOptionsDialog()`>来生成一个对话框来选择字体样式并修改
+5. 编写一个方法<`showFontOptionsDialog()`>来生成一个对话框来选择字体样式并修改
    ![108334fb-0c3a-47a5-921e-593c81f93297](./images/108334fb-0c3a-47a5-921e-593c81f93297.png)
 
    `setCustomFont()`方法：
@@ -402,11 +404,13 @@
 
 3. 更新 `insert` 和 `update` 方法
    `insert`方法
+   
    ![71569c46-6b82-4544-938c-bdd0e41cb6bc](./images/71569c46-6b82-4544-938c-bdd0e41cb6bc.png)
    `update`方法
+   
    ![44b9c5ba-3d61-4d15-a02c-b24813ddb264](./images/44b9c5ba-3d61-4d15-a02c-b24813ddb264.png)
 
-4. 在 UI 中保存和加载字体样式
+5. 在 UI 中保存和加载字体样式
    
    
 
