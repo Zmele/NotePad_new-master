@@ -113,12 +113,14 @@
    
    在`res/value`中新建一个color.xml，加入想要的颜色
    ![b305315f-636c-4b9e-bdd9-26a446e11dcb](./images/b305315f-636c-4b9e-bdd9-26a446e11dcb.png)
+
    修改colors数组和显示文本
    ![a073812d-bf96-456f-8590-219385876512](./images/a073812d-bf96-456f-8590-219385876512.png)
 
 4. 效果展示：
    ![f55b6287-e49f-4bda-8a97-ab0b73ae3146](./images/f55b6287-e49f-4bda-8a97-ab0b73ae3146.png)
    ![180111c7-b644-4486-9a64-6276e69de6b9](./images/180111c7-b644-4486-9a64-6276e69de6b9.png)
+   
    选择LightGreen
    ![6e569a36-7c56-437f-9c67-917849b2cb5c](./images/6e569a36-7c56-437f-9c67-917849b2cb5c.png)
 
