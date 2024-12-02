@@ -403,9 +403,11 @@
    ![e3d8ee84-2121-425f-9305-63c4492e6f71](./images/e3d8ee84-2121-425f-9305-63c4492e6f71.png)
 
 3. 更新 `insert` 和 `update` 方法
+
    `insert`方法
    
    ![71569c46-6b82-4544-938c-bdd0e41cb6bc](./images/71569c46-6b82-4544-938c-bdd0e41cb6bc.png)
+
    `update`方法
    
    ![44b9c5ba-3d61-4d15-a02c-b24813ddb264](./images/44b9c5ba-3d61-4d15-a02c-b24813ddb264.png)
