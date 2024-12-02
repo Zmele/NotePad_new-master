@@ -295,7 +295,7 @@
 
 ![248d5f7048e047d4af64cf21b95013f7](./images/248d5f70-48e0-47d4-af64-cf21b95013f7.png?msec=1732818203675)
 ![6c9aff2ba372419cae15d4fb5c66d0ab](./images/6c9aff2b-a372-419c-ae15-d4fb5c66d0ab.png?msec=1732818203677)
-![3e811b41-86eb-4de9-b7de-b47dfffa9802](./images/3e811b41-86eb-4de9-b7de-b47dfffa9802.png)
+![3e811b41-86eb-4de9-b7de-b47dfffa9802](./images/3e811b41-86eb-4de9-b7de-b47dfffa9802.png)
 
 ##### 笔记编辑界面美化
 
@@ -337,7 +337,10 @@
 </LinearLayout>
 ```
 
-修改`NoteEditor.java`中的`OnCreate()`方法 ![a0ae92b692f343c4af2184d6754cce09](./images/a0ae92b6-92f3-43c4-af21-84d6754cce09.png?msec=1732826627164?msec=1732826789080?msec=1732826814399) 展示：
+修改`NoteEditor.java`中的`OnCreate()`方法 
+![a0ae92b692f343c4af2184d6754cce09](./images/a0ae92b6-92f3-43c4-af21-84d6754cce09.png?msec=1732826627164?msec=1732826789080?msec=1732826814399) 
+
+展示：
 ![afa9a0ea-b351-41f7-98cb-4ab6878755da](./images/afa9a0ea-b351-41f7-98cb-4ab6878755da.png)
 
 #### 添加笔记导出功能
