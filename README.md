@@ -295,6 +295,7 @@
 
 ![248d5f7048e047d4af64cf21b95013f7](./images/248d5f70-48e0-47d4-af64-cf21b95013f7.png?msec=1732818203675)
 ![6c9aff2ba372419cae15d4fb5c66d0ab](./images/6c9aff2b-a372-419c-ae15-d4fb5c66d0ab.png?msec=1732818203677)
+
 ![3e811b41-86eb-4de9-b7de-b47dfffa9802](./images/3e811b41-86eb-4de9-b7de-b47dfffa9802.png)
 
 ##### 笔记编辑界面美化
@@ -341,6 +342,7 @@
 ![a0ae92b692f343c4af2184d6754cce09](./images/a0ae92b6-92f3-43c4-af21-84d6754cce09.png?msec=1732826627164?msec=1732826789080?msec=1732826814399) 
 
 展示：
+
 ![afa9a0ea-b351-41f7-98cb-4ab6878755da](./images/afa9a0ea-b351-41f7-98cb-4ab6878755da.png)
 
 #### 添加笔记导出功能
@@ -365,23 +367,28 @@
 ![77026b0a-6503-4d55-b039-4edfbd1ac492](./images/77026b0a-6503-4d55-b039-4edfbd1ac492.png)
 
 报错问题解决（`AndroidManifest.xml`）：
-给定义了意图过滤器（`intent filter`）的组件（`activity`）设置 `android:exported` 属性![dcf50e4d-bb27-45c1-b012-3c52f67f7232](./images/dcf50e4d-bb27-45c1-b012-3c52f67f7232.png)
+给定义了意图过滤器（`intent filter`）的组件（`activity`）设置 `android:exported` 属性
+![dcf50e4d-bb27-45c1-b012-3c52f67f7232](./images/dcf50e4d-bb27-45c1-b012-3c52f67f7232.png)
 ![84534308-1983-4a40-93f1-a16e7255dc77](./images/84534308-1983-4a40-93f1-a16e7255dc77.png)
 ![bea83eee-1f41-4640-a63f-d1f12498b218](./images/bea83eee-1f41-4640-a63f-d1f12498b218.png)
 更新后页面展示：
+
 ![2e0e44f7-5a5e-4af6-bf30-29ded42971a7](file:///C:/Users/zjinh/Pictures/Typedown/2e0e44f7-5a5e-4af6-bf30-29ded42971a7.png)
 
 #### 添加字体样式修改功能
 
 1. 右键点击 `main` 文件夹：在 `main` 文件夹上右键点击，选择 `New -> Folder`。 选择 `Assets Folder`，然后点击 `Finish`。这样就会在 `src/main` 创建一个 `assets` 文件夹。 在 `assets` 文件夹中创建一个`fonts`文件夹，在里面添加字体文件（字体文件下载地址<格式：.ttf>：[Browse Fonts - Google Fonts](https://fonts.google.com/?preview.text=%E4%BD%A0%E5%A5%BD)）
+
    ![812f318b-f0bd-42b1-b5d5-0a8e1e23bd8d](./images/812f318b-f0bd-42b1-b5d5-0a8e1e23bd8d.png)
 
-2. 添加一个菜单项用来显示修改字体样式（`onOptionsItemSelected()`方法）
+3. 添加一个菜单项用来显示修改字体样式（`onOptionsItemSelected()`方法）
    ![b0df53c2-8850-4c9a-93ce-af2368a7e45d](./images/b0df53c2-8850-4c9a-93ce-af2368a7e45d.png)
 
-3. 编写一个方法<`showFontOptionsDialog()`>来生成一个对话框来选择字体样式并修改
+4. 编写一个方法<`showFontOptionsDialog()`>来生成一个对话框来选择字体样式并修改
    ![108334fb-0c3a-47a5-921e-593c81f93297](./images/108334fb-0c3a-47a5-921e-593c81f93297.png)
+
    `setCustomFont()`方法：
+   
    ![67b2424b-0451-4a6f-974f-94ae3ce676da](./images/67b2424b-0451-4a6f-974f-94ae3ce676da.png)
 
 ##### 添加字体样式后不能保存——解决（没解决）
